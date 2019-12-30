@@ -225,6 +225,7 @@
     height: 840px;
     /*background-color: brown;*/
     /*background-color:  #e6e6e6;*/
+    /*opacity: 0.8;*/
     /*text-align: center;*/
   
   
@@ -244,14 +245,13 @@
   }*/
   #entity1{
     height: 320px;
-    background-color:  #e6e6e6;
+    background-color:  rgba(192,192,192,0.65);
     /*margin-left: 30px;*/
     margin-top: 30px;
     width: 80%;
     padding: 0px;
     border: 0px;
     margin-left: 85px;
-    
     border-radius: 10px;
     /*opacity: 0.98;*/
     /*margin-left: auto;*/
@@ -265,7 +265,7 @@
   }
   #entity2{
     height: 320px;
-    background-color:  #e6e6e6;
+    background-color: rgba(192,192,192,0.65);
     /*margin-left: 30px;*/
    margin-top: 30px;
     width: 80%;
@@ -274,7 +274,6 @@
     margin-left: 85px;
     
     border-radius: 10px;
-    opacity: 0.95;
     /*margin-left: auto;*/
    
     /*align-content: center;
@@ -286,7 +285,7 @@
   }
   #entity3{
     height: 320px;
-    background-color:  #e6e6e6;
+    background-color:  rgba(192,192,192,0.65);
     /*margin-left: 30px;*/
     margin-top: 15px;
     margin-left: 85px;
@@ -295,7 +294,6 @@
     border: 0px;
     
     border-radius: 10px;
-    opacity: 0.95;
     /*margin-left: auto;*/
    
     /*align-content: center;
@@ -307,7 +305,7 @@
   }
   #entity4{
     height: 320px;
-    background-color:  #e6e6e6;
+    background-color:  rgba(192,192,192,0.65);
     /*margin-left: 30px;*/
     margin-top: 30px;
     width: 80%;
@@ -315,7 +313,7 @@
     border: 0px;
     margin-left: 85px;
     border-radius: 10px;
-    opacity: 0.95;
+    
     /*margin-left: auto;*/
    
     /*align-content: center;
@@ -327,7 +325,7 @@
   }
   #entity5{
     height: 320px;
-    background-color:  #e6e6e6;
+    background-color: rgba(192,192,192,0.65);
     /*margin-left: 30px;*/
     /*margin-top: -125px;*/
     margin-top: 15px;
@@ -336,7 +334,7 @@
     border: 0px;
     margin-left: 85px;
     border-radius: 10px;
-    opacity: 0.95;
+    
     /*margin-left: auto;*/
    
     /*align-content: center;
@@ -347,7 +345,7 @@
   }
   #entity6{
      height: 320px;
-    background-color:  #e6e6e6;
+    background-color:  rgba(192,192,192,0.65);
     /*margin-left: 30px;*/
     margin-top: 30px;
     width: 80%;
@@ -355,7 +353,7 @@
     border: 0px;
     margin-left: 85px;
     border-radius: 10px;
-    opacity: 0.95;
+    
     /*margin-left: auto;*/
    
     /*align-content: center;
@@ -366,7 +364,7 @@
   }
   #entity7{
      height: 320px;
-    background-color:  #e6e6e6;
+    background-color:  rgba(192,192,192,0.65);
     /*margin-left: 30px;*/
     /*margin-top: -260px;*/
     margin-top: 15px;
@@ -375,7 +373,7 @@
     border: 0px;
     margin-left: 85px;
     border-radius: 10px;
-    opacity: 0.95;
+    
     /*margin-left: auto;*/
    
     /*align-content: center;
@@ -386,7 +384,7 @@
   }
   #entity8{
     height: 320px;
-    background-color:  #e6e6e6;
+    background-color:  rgba(192,192,192,0.65);
     /*margin-left: 30px;*/
     margin-top: 30px;
     width: 80%;
@@ -394,7 +392,7 @@
     border: 0px;
     margin-left: 85px;
     border-radius: 10px;
-    opacity: 0.95;
+    
     /*margin-left: auto;*/
    
     /*align-content: center;
@@ -406,7 +404,7 @@
   }
   #entity9{
      height: 320px;
-    background-color:  #e6e6e6;
+    background-color:  rgba(192,192,192,0.65);
     /*margin-left: 30px;*/
     /*margin-top: -395px;*/
     margin-top: 15px;
@@ -415,7 +413,7 @@
     border: 0px;
     margin-left: 85px;
     border-radius: 10px;
-    opacity: 0.95;
+    
     /*margin-left: auto;*/
    
     /*align-content: center;
@@ -427,7 +425,7 @@
   }
   #entity10{
      height: 320px;
-    background-color:  #e6e6e6;
+    background-color:  rgba(192,192,192,0.65);
     /*margin-left: 30px;*/
     margin-top: 30px;
     width: 80%;
@@ -435,7 +433,7 @@
     border: 0px;
     margin-left: 85px;
     border-radius: 10px;
-    opacity: 0.95;
+    
     /*margin-left: auto;*/
    
     /*align-content: center;
@@ -458,7 +456,6 @@
     height: 350px;
     /*background-color: orange;*/
     margin-top: 8px;
-    opacity: 1.5;
 
   }
   .innerspace{
@@ -559,7 +556,6 @@
     /*box-sizing: border-box;*/
   }
   #innerentity{
-    
     height: 350px;
     margin-left: 30px;
   }
