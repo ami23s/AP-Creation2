@@ -218,7 +218,7 @@
   }
   #cat1{
     height: 715px;
-    background-image: url('../images/Background 1.JPG'); 
+    background-image: url('../images/back1.JPG'); 
     
   }
   #imagetext{
@@ -452,6 +452,7 @@
     margin-top: 10px;
     filter: brightness(100%);
     margin-left: -10px;
+    opacity: 100%;
     /*margin-right: -10px;*/
   }
   #text{
@@ -565,7 +566,7 @@
   }
   #cat2{
     height: 700px;
-    background-image: url('../images/Background4.JPG');
+    background-image: url('../images/back2.JPG');
     
   }
   #cat3{
