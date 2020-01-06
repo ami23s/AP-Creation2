@@ -1,4 +1,4 @@
- 
+  
  body{
   padding-top: 50px;
   margin-top: 0px;
@@ -226,7 +226,7 @@
     /*background-color: black;*/
     background-image: url('../images1/top/9.jpg'); 
     position: relative;
-    z-index: -1;
+   /* z-index: -1;*/
     /*width: 102%;
     vertical-align: middle;
      background-size: 100%;
@@ -596,7 +596,7 @@
     background-color: #45a049;
   }
   .change1{
-    margin-left: 20px;
+    margin-left: 5px;
     margin-top: 7px;
   }
   /*#productcategory{
@@ -623,7 +623,7 @@
   #cat3{
     height: 700px;
     background-image: url('../images1/top/IMG_9264.JPG');
-    
+   
     
   }
   #cat4{
@@ -832,7 +832,7 @@
          font-size: 32px;
      }
      #promb{
-         font size:28px;
+         font-size:28px;
      }
      #prom{
         font-size: 20px;
@@ -994,7 +994,7 @@
          font-size: 27px;
      }
      #promb{
-         font size:26px;
+         font-size:26px;
      }
      #prom{
         font-size: 18px;
@@ -1010,7 +1010,7 @@
          font-size: 25px;
      }
      #promb{
-         font size:24px;
+         font-size:24px;
      }
      #prom{
         font-size: 16px;
@@ -1026,7 +1026,7 @@
          font-size: 23px;
      }
      #promb{
-         font size:21px;
+         font-size:21px;
      }
      #prom{
         font-size: 15px;
@@ -1042,7 +1042,7 @@
          font-size: 21px;
      }
      #promb{
-         font size:19px;
+         font-size:19px;
      }
      #prom{
         font-size: 14px;
@@ -1053,9 +1053,7 @@
       }
 }
 @media screen and (max-width: 620px){
-     #nav2c{
-      /*margin-right: -50px;*/
-     }
+     
      #bad3{
       margin-left: 50px;
      }
@@ -1101,7 +1099,7 @@
   }
 }
 
-@media screen and (max-width: 576px;)
+@media screen and (max-width: 576px)
 {
   #enq1{
     visibility: hidden;
@@ -1266,3 +1264,4 @@
       padding-top: 100px;
     }
   }*/
+ 
