@@ -1,9 +1,24 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-compatible" content="ie-edge">
+      <title>Home Page</title>
+      <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <h1>This is heading</h1>
+        <p>We are at home page and we are serving using express js.</p>
+        <div id="back"></div>
+    </body>
+</html> -->
 <!DOCTYPE html>
 <html>
 <head>
 	<title>AP Creation</title>
    <meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href=".\css\style1.css">
+	<link rel="stylesheet" type="text/css" href="./css/style1.css">
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -27,13 +42,22 @@
   <link href="https://fonts.googleapis.com/css?family=Stoke&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="icon-bar">
+  <div class="icon-bar" style="z-index: 1;">
   <!-- <a href="https://api.whatsapp.com/send?phone=+917036231237" class="facebook"><i class="fa fa-facebook"></i></a>  -->
   
   <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
   <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
   <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-  <a href="https://api.whatsapp.com/send?phone=+917036231237&text=Hello" class="whatsapp"><i class="fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=+917036231237" aria-hidden="true"></i></a> 
+  <a href="https://api.whatsapp.com/send?phone=+917036231237&text=Hello, I would like to get details of the following products.
+  1-Metal Badges
+  2-Wodden Badges
+  3-Acrylic Badges
+  4-Button Badges
+  5-School Badges
+  6-Security Badges
+  7-Event Badges
+  8-Smiley Badges
+  9-Promotional Badges" class="whatsapp"><i class="fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=+917036231237" aria-hidden="true"></i></a> 
 </div>
 <script>
   $(window).scroll(function() {
@@ -58,13 +82,14 @@
         $('.topnav').css('background','linear-gradient(to left, #000000 0%, #ffffff 100%)');
         $('#noc').css('color', '#100c08');
         $('.icon').css('color', '#100c08');
+        $('.icon-bar').css('visibility', 'visible');
       }
     else {
         $('.second').attr('style', '');
         $('.topnav').attr('style', '');
         $('#noc').attr('style', '');
         $('.icon').attr('style', '');
-
+        $('.icon-bar').css('visibility', 'hidden');
     }
 });
 
@@ -128,12 +153,12 @@ Appealing Shapes | Dome Epoxy Coating</center></h3></p><!-- </div> -->
          <form action="https://docs.google.com/forms/d/e/1FAIpQLScG8hY4fan4E5MJ4eof0ASsczzf8htfqUjErl8t29-vMaa-cg/formResponse?" method="POST" target="hidden_iframe" onsubmit="submitted=true">
     
     <div class="form-group">
-      <label for="name" id="forml">Name</label>
+      <label for="name" id="forml">*Name</label>
       <input type="name" class="form-control" id="formi" placeholder="Enter name" name="entry.1290377782" required>
     </div>
      <div class="form-group">
-      <label for="pnumber" class="formln">Phone Number</label>
-      <input type="pnumber" id="formi" class="form-control" placeholder="Enter phone number" name="entry.1751427031" required onkeyup="check(); return false;" ><span id="message"></span>
+      <label for="pnumber" class="formln">*Phone Number</label>
+      <input type="pnumber" id="formi" class="form-control" placeholder="Enter phone number" name="entry.1751427031" required onkeyup="check(); return false;" ><span id="message1"></span>
     </div>
     <div class="form-group">
       <label for="email" class="formln">Email</label>
@@ -160,10 +185,10 @@ Appealing Shapes | Dome Epoxy Coating</center></h3></p><!-- </div> -->
       <label for="comment" class="formln">Add comment</label>
       <input type="comment" id="formi" class="form-control" placeholder="Any Comments" name="entry.1281807115">
     </div> 
-    <!-- <input type="text" class="change" id="utm_source" name="entry.1752881774" placeholder="Your comment.." style="display: none;">
+    <input type="text" class="change" id="utm_source" name="entry.1752881774" placeholder="Your comment.." style="display: none;">
     <input type="text" class="change" id="utm_campaign" name="entry.1847582634" placeholder="Your comment.." style="display: none;">
     <input type="text" class="change" id="utm_medium" name="entry.601919432" placeholder="Your comment.." style="display: none;">
-    <input type="text" class="change" id="keyword" name="entry.293828544" placeholder="Your comment.." style="display: none;"> -->
+    <input type="text" class="change" id="keyword" name="entry.293828544" placeholder="Your comment.." style="display: none;">
     <button type="submit" class="btn btn-success" style=" display: block; margin-top: -10px; margin-left: 15px;">Get Quotation</button>
   </form>
         
@@ -283,18 +308,18 @@ Appealing Shapes | Dome Epoxy Coating</center></h3></p><!-- </div> -->
     </div>
   <div class="col-lg-4" id="form">
     
-   <div id="form1">
+   <div id="form1" style="z-index: 2;">
          <iframe src="" name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if(submitted){window.location='file:///C:/Users/AMITESH/Desktop/badge1/index.html?#ThankYou';
            }"></iframe>
          <form action="https://docs.google.com/forms/d/e/1FAIpQLScG8hY4fan4E5MJ4eof0ASsczzf8htfqUjErl8t29-vMaa-cg/formResponse?" method="POST" target="hidden_iframe" onsubmit="submitted=true">
     
-    <label for="fname" class="change1">Name</label>
+    <label for="fname" class="change1">*Name</label>
     <input type="text" class="change" id="fname" name="entry.1290377782"placeholder="Your name.." required>
 
-    <label for="pnumber" class="change1">Phone number</label>
+    <label for="pnumber" class="change1">*Phone number</label>
     <input type="text" class="change" id="pnumber" name="entry.1751427031" placeholder="Your Phone number.." required onkeyup="check(); return false;" ><span id="message"></span>
     
-    <label for="email" class="change1" id="em">Email</label>
+    <label for="email" class="change1" id="em">*Email</label>
     <input type="text" class="change" id="email" name="entry.363444995" placeholder="Your Email id..">
     
     <label for="product category" class="change1">Product Category</label>
@@ -310,10 +335,10 @@ Appealing Shapes | Dome Epoxy Coating</center></h3></p><!-- </div> -->
     <input type="text" class="change" name="entry.447000353" placeholder="Your quantity..">
     <label for="comment" class="change1">Comment</label>
     <input type="text" class="change" id="comment" name="entry.1281807115" placeholder="Your comment..">
-    <input type="text" class="change" id="utm_source" name="entry.1752881774" placeholder="Your comment.." style="display: none;">
-    <input type="text" class="change" id="utm_campaign" name="entry.1847582634" placeholder="Your comment.." style="display: none;">
-    <input type="text" class="change" id="utm_medium" name="entry.601919432" placeholder="Your comment.." style="display: none;">
-    <input type="text" class="change" id="keyword" name="entry.293828544" placeholder="Your comment.." style="display: none;">
+    <input type="text" class="change" id="utm_source1" name="entry.1752881774" placeholder="Your comment.." style="display: none;">
+    <input type="text" class="change" id="utm_campaign1" name="entry.1847582634" placeholder="Your comment.." style="display: none;">
+    <input type="text" class="change" id="utm_medium1" name="entry.601919432" placeholder="Your comment.." style="display: none;">
+    <input type="text" class="change" id="keyword1" name="entry.293828544" placeholder="Your comment.." style="display: none;">
 
     <!-- <label for="image upload" class="change1">Image upload</label>
     <input type="text" class="change" id="image upload" name="image upload" placeholder=""> -->
@@ -340,6 +365,10 @@ Appealing Shapes | Dome Epoxy Coating</center></h3></p><!-- </div> -->
       }
     }
   
+  var utms1=parseURLParameter('utm_source1');
+  var utmc1=parseURLParameter('utm_campaign1');
+  var utmm1=parseURLParameter('utm_medium1');
+  var key1=parseURLParameter('keyword1');
   var PageName=parseURLParameter('page');
   var utms=parseURLParameter('utm_source');
   var utmc=parseURLParameter('utm_campaign');
@@ -366,13 +395,35 @@ Appealing Shapes | Dome Epoxy Coating</center></h3></p><!-- </div> -->
   }else{
     $("#keyword").val()= 'No value found';
   }
+
+
+  if(typeof utm_source1!=='undefined'){
+    document.getElementById("utm_source1").value = utms1;
+  }else{
+    $("#utm_source1").val()= 'No value found';
+  }
+  if(typeof utm_campaign1!=='undefined'){
+    document.getElementById("utm_campaign1").value = utmc1;
+  }else{
+    $("#utm_campaign1").val()= 'No value found';
+  }
+  if(typeof utm_medium1!=='undefined'){
+    document.getElementById("utm_medium1").value = utmm1;
+  }else{
+    $("#utm_medium1").val()= 'No value found';
+  }
+  if(typeof keyword1!=='undefined'){
+    document.getElementById("keyword1").value = key1;
+  }else{
+    $("#keyword1").val()= 'No value found';
+  }
 }
 function check()
 {
 
     var pass1 = document.getElementById('pnumber');
-
-
+     var pass2 = document.getElementById('formi');
+   var message1 = document.getElementById('message1');
     var message = document.getElementById('message');
 
     var goodColor = "#0C6";
@@ -386,11 +437,24 @@ function check()
         pass1.style.backgroundColor = badColor;
         message.style.color = badColor;
         message.innerHTML = "required 10 digits, match requested format!"
-        document.getElementById(em).style.display=hid;
+        document.getElementById('em').style.display=block;
     }
     else if(pass1.value.length==10){
         message.innerHTML =""
          pass1.style.backgroundColor = originalcolor;
+         document.getElementById('em').style.display=inline;
+    
+    }
+    if(pass2.value.length!=10){
+
+        pass2.style.backgroundColor = badColor;
+        message1.style.color = badColor;
+        message1.innerHTML = "required 10 digits, match requested format!"
+        document.getElementById(em).style.display=hid;
+    }
+    else if(pass2.value.length==10){
+        message1.innerHTML =""
+         pass2.style.backgroundColor = originalcolor;
          document.getElementById(em).style.display=vis;
     
     }
@@ -561,7 +625,7 @@ function buildUrl(form)
       
     </div>
     </div>
-  <div class="col-lg-4" id="form">
+  <div class="col-lg-4" id="form" style="z-index: -1;">
    
   </div>
   
@@ -667,7 +731,7 @@ function buildUrl(form)
       
     </div>
     </div>
-  <div class="col-lg-4" id="form">
+  <div class="col-lg-4" id="form" style="z-index: -1;">
    
   </div>
   
@@ -773,7 +837,7 @@ function buildUrl(form)
       
     </div>
     </div>
-  <div class="col-lg-4" id="form">
+  <div class="col-lg-4" id="form" style="z-index: -1;">
    
   </div>
 </div> 
