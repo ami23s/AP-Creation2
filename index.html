@@ -26,6 +26,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Stoke&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
   <div class="icon-bar" style="z-index: 1;">
@@ -113,7 +116,9 @@ function navFunction(id) {
   <a href="tel:+917036231237" class="firstn"><i class="fa fa-phone" aria-hidden="true"></i> 7036231237</a>
   <!-- <a href="javascript:void(0);" class="icon" onclick="navFunction()">
     <i class="fa fa-bars"></i> -->
-  </a>
+  <button class="btn btn-info" id="enquire">
+    <a href="#nav2" id="gotoform">Enquire now</a>
+  </button>
   </div>
 <div id="psuedonav">
   <a href="#new">Home</a>
@@ -144,7 +149,7 @@ Appealing Shapes | Dome Epoxy Coating</center></h3></p><!-- </div> -->
 <div class="col-lg-3" style="height: 300px;">
   <div class="container" style="height: 420px;">
     <div id="form2">
-          <iframe src="" name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if(submitted){window.location='file:///C:/Users/AMITESH/Desktop/badge1/index.html?#ThankYou';
+          <iframe src="" name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if(submitted){window.location='file:///C:/Users/AMITESH/Desktop/badge1/index.html?thankyou=1';
            }"></iframe>
          <form action="https://docs.google.com/forms/d/e/1FAIpQLScG8hY4fan4E5MJ4eof0ASsczzf8htfqUjErl8t29-vMaa-cg/formResponse?" method="POST" target="hidden_iframe" onsubmit="submitted=true">
     
@@ -158,11 +163,11 @@ Appealing Shapes | Dome Epoxy Coating</center></h3></p><!-- </div> -->
     </div>
     <div class="form-group">
       <label for="email" class="formln">Email</label>
-      <input type="email" id="formi" class="form-control" placeholder="Enter Email" name="entry.363444995">
+      <input type="email" id="formie" class="form-control" placeholder="Enter Email" name="entry.363444995">
     </div>
     <div class="form-group">
       <label for="productcategory" class="formln">Product Category</label>
-      <select type="productcategory" id="formi" name="entry.1901932496">
+      <select type="productcategory" id="formip" name="entry.1901932496">
       <option value="Metal">Metal</option>
       <option value="Acrylic">Acrylic</option>
       <option value="Button">Button</option>
@@ -171,15 +176,15 @@ Appealing Shapes | Dome Epoxy Coating</center></h3></p><!-- </div> -->
     </div>
     <div class="form-group">
       <label for="budget" class="formln">Budget</label>
-      <input type="budget" id="formi" class="form-control" placeholder="Enter Budget" name="entry.856466517">
+      <input type="budget" id="formib" class="form-control" placeholder="Enter Budget" name="entry.856466517">
     </div>
     <div class="form-group">
       <label for="quantity" class="formln">Quantity</label>
-      <input type="quantity" id="formi" class="form-control" placeholder="Enter Quantity" name="entry.447000353">
+      <input type="quantity" id="formiq" class="form-control" placeholder="Enter Quantity" name="entry.447000353">
     </div>
     <div class="form-group">
       <label for="comment" class="formln">Add comment</label>
-      <input type="comment" id="formi" class="form-control" placeholder="Any Comments" name="entry.1281807115">
+      <input type="comment" id="formic" class="form-control" placeholder="Any Comments" name="entry.1281807115">
     </div> 
     <input type="text" class="change" id="utm_source" name="entry.1752881774" placeholder="Your comment.." style="display: none;">
     <input type="text" class="change" id="utm_campaign" name="entry.1847582634" placeholder="Your comment.." style="display: none;">
@@ -305,7 +310,7 @@ Appealing Shapes | Dome Epoxy Coating</center></h3></p><!-- </div> -->
   <div class="col-lg-4" id="form">
     
    <div id="form1" style="z-index: 2;">
-         <iframe src="" name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if(submitted){window.location='file:///C:/Users/AMITESH/Desktop/badge1/index.html?#ThankYou';
+         <iframe src="" name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if(submitted){window.location='file:///C:/Users/AMITESH/Desktop/badge1/index.html?thankyou=1';
            }"></iframe>
          <form action="https://docs.google.com/forms/d/e/1FAIpQLScG8hY4fan4E5MJ4eof0ASsczzf8htfqUjErl8t29-vMaa-cg/formResponse?" method="POST" target="hidden_iframe" onsubmit="submitted=true">
     
@@ -338,7 +343,7 @@ Appealing Shapes | Dome Epoxy Coating</center></h3></p><!-- </div> -->
 
     <!-- <label for="image upload" class="change1">Image upload</label>
     <input type="text" class="change" id="image upload" name="image upload" placeholder=""> -->
-    <input type="submit" value="Get Quotation" id="submit" onclick="myalert()">
+    <input type="submit" value="Get Quotation" id="submit">
   </form>
         
       </div>
@@ -470,18 +475,42 @@ function check2(){
    var submitted=false;
 
 
-function myalert(){
-  var name=document.getElementById("fname");
-  var number=document.getElementById("pnumber");
+// function myalert(){
+//   var name=document.getElementById("fname");
+//   var number=document.getElementById("pnumber");
   
-if(submitted){
-  alert("Your responses have been recorded successfully!!!");
-  $('.change').css('display','none');
-  $('.change1').css('display','none');
-  $('#form1').css('background-color','blue');
-  document.getElementById("form1").innerHTML="Thank You";
-}
+// if(name!=null && number!=null){
+//   alert("Your responses have been recorded successfully!!!");
+//   $('.change').css('display','none');
+//   $('.change1').css('display','none');
+//   $('#form1').css('background-color','blue');
+//   document.getElementById("form1").innerHTML="Thank You";
+// }
 
+// }
+// var pathRegex = C:\Users\AMITESH\Desktop\badge1\index.html?#ThankYou;
+//  if (pathRegex.test(window.location.href)) {
+//      alert("Your Form Has Been Submitted.")
+//  }
+// $( "submit" ).first().click(function() {
+//   $.alert({
+//     title: 'Alert!',
+//     content: 'Simple alert!',
+// });
+// });
+function GetURLParameter(urlParameter){ 
+        var url = window.location.search.substring(1); 
+        var urlVariables = url.split('&'); 
+        for (var i = 0; i < urlVariables.length; i++){ 
+            var parameter = urlVariables[i].split('='); 
+            if (parameter[0] == urlParameter){ 
+                return parameter[1]; 
+            } 
+        } 
+    } 
+    var k = GetURLParameter('thankyou');
+if (k == 1){
+    alert("Your Form Has Been Submitted.")
 }
 // if(submitted){
 //   $('.change').css('display','none');
