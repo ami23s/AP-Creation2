@@ -571,15 +571,17 @@
     */}
     #formi{
       max-width: 90%; 
-      height: 30px; 
+      height: 25px; 
       /*margin-left: 10px;*/
       margin-left: auto;
       margin-right: auto;
-      margin-top: -5px;
+      margin-top: -15px;
+      margin-top: 0px;
+      display: block;
     }
     #formie{
       max-width: 90%; 
-      height: 30px; 
+      height: 25px; 
       /*margin-left: 10px;*/
       margin-left: auto;
       margin-right: auto;
@@ -587,7 +589,7 @@
     }
     #formip{
       max-width: 90%; 
-      height: 30px; 
+      height: 25px; 
       /*margin-left: 10px;*/
       margin-left: auto;
       margin-right: auto;
@@ -595,7 +597,7 @@
     }
     #formib{
       max-width: 90%; 
-      height: 30px; 
+      height: 25px; 
       /*margin-left: 10px;*/
       margin-left: auto;
       margin-right: auto;
@@ -603,7 +605,7 @@
     }
     #formiq{
       max-width: 90%; 
-      height: 30px; 
+      height: 25px; 
       /*margin-left: 10px;*/
       margin-left: auto;
       margin-right: auto;
@@ -611,7 +613,7 @@
     }
     #formic{
       max-width: 90%; 
-      height: 30px; 
+      height: 25px; 
       /*margin-left: 10px;*/
       margin-left: auto;
       margin-right: auto;
@@ -619,7 +621,7 @@
     }
     #formin{
       max-width: 90%; 
-      height: 30px; 
+      height: 25px; 
       /*margin-left: 10px;*/
       margin-left: auto;
       margin-right: auto;
@@ -627,11 +629,14 @@
     }
     #forml{
       margin-left: 15px;
+      font-size: 15px;
+      margin-bottom: -15px;
     }
     .formln{
       margin-left: 15px;
       margin-top: -10px;
       display: block;
+      margin-bottom: 5px;
     }
 
   .change {
@@ -801,21 +806,7 @@
 }
 
 /*ALL MEDIA QUERIES*/
-@media screen and (max-width: 1400px){
-  #new{
-    background-image: url('../images1/top/10.jpg');
-  }
-  #welc1{
-     color: white;
-     font-weight: bolder;
-     /*text-shadow: 2px 2px 5px #a3fd20;*/
-  }
-  #welc{
-     color: #ffda29;
-     text-shadow: 4px 4px 6px #990000;
-     font-weight: bolder;
-  }
-}
+
 @media screen and (max-width: 1488px){
   #promb{
     font-size: 36px;
@@ -923,6 +914,9 @@
     }
    }
     @media screen and (max-width: 992px){
+      #new{
+    background-image: url('../images1/top/10.jpg');
+   }
      article h4{
          font-size: 32px;
      }
