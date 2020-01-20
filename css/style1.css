@@ -761,11 +761,17 @@
 
 
 #welc{
-    font-family: 'Merriweather', serif;
+    /*font-family: 'Cabin', sans-serif;
     font-size: 34px; 
-    color: #f2f2f2; 
+    color: #f2f2f2;*/
+    /*color: #000000; */
+    color:#e6ffe6;
+      /*font-weight: normal;*/
+      text-shadow: 10px 10px 20px #1b1b1b;
+      font-family: 'Fjalla One', sans-serif;
     margin-top:30px;
-
+    font-weight: bold;
+    font-size: 45px;
 }
 #welc1{
   font-family: 'Merriweather', serif; 
@@ -805,9 +811,66 @@
   margin-left: -20px;
   color: #f2f2f2;
 }
-
+.gradient-button {
+    margin: 10px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 10px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #FFF;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+}
+.gradient-button:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 8px 10px 12px;
+    text-decoration: none;
+}
+.gradient-button-1 {background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97 51%, #DD5E89 100%)}
+.gradient-button-1:hover { background-position: right center; }
+#maillink{
+  font-size: 26px; 
+  font-family: 'Merriweather', serif; 
+  text-shadow: 2px 2px 4px #1f2e2e;
+}
+#social{
+  background-color: #080808; 
+  height: 200px;
+}
 /*ALL MEDIA QUERIES*/
-
+@media only screen and (max-width: 550px) and (min-width: 0px) {
+    #cat1 {
+        background: none;
+        background-color: #f2f2f2;
+    }
+     #cat2 {
+        background: none;
+        background-color: #f2f2f2;
+    }
+     #cat3 {
+        background: none;
+        background-color: #f2f2f2;
+    }
+     #cat4 {
+        background: none;
+        background-color: #f2f2f2;
+    }
+}
+@media screen and (max-width: 1200px){
+  #maillink{
+    font-size: 22px;
+  }
+}
 @media screen and (max-width: 1488px){
   #promb{
     font-size: 36px;
@@ -816,7 +879,21 @@
    font-size: 36px;
   }
 }
-@media screen and (max-width: 1352px){
+@media screen and (max-width: 1386px){
+  #promb{
+    font-size: 34px;
+  }
+  article h4{
+    font-size: 34px;
+  }
+  .cont{
+    font-size: 17px;
+  }
+  #prom{
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 1357px){
   #promb{
     font-size: 32px;
   }
@@ -909,16 +986,31 @@
     margin-left: 100px;
    }
  }
+ @media screen and (max-width: 407px){
+  #social{
+    height: 240px;
+  }
+ }
    @media screen and (max-width: 442px){
     #maint{
     margin-left: 50px;
     }
    }
     @media screen and (max-width: 992px){
-      #new{
+    #new{
     background-image: url('../images1/top/10.jpg');
-   }
-     article h4{
+    }
+    #welc{
+      color:#e6ffe6;
+      /*font-weight: normal;*/
+      text-shadow: 10px 10px 20px #1b1b1b;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 35px;
+    }
+    #welc1{
+      color: #e6e600;
+    }
+    article h4{
          font-size: 32px;
      }
      #promb{
@@ -1113,7 +1205,7 @@
     margin-left: 10px;
   }
 }
-@media screen and(max-width: 382px){
+@media screen and (max-width: 382px){
   #enquire{
     margin-left: 0px;
   }
@@ -1170,9 +1262,7 @@
       .cont{
         font-size: 15px;
       }
-      #cat1{
-        background-image: url('../images1/top/Jeans2.JPG');
-      }
+      
 }
 
 @media screen and (max-width: 320px){
@@ -1222,11 +1312,11 @@
   }*/
   #welc{
     font-size: 30px;
-    font-weight: bolder;
+    font-weight: bold;
   }
   #welc1{
     font-size: 35px;
-    font-weight: bolder;
+    font-weight: bold;
   }
   .icon-bar a{
     padding: 6px;
@@ -1403,6 +1493,11 @@
     width: 350px;
   }
 }
+@media screen and (max-width: 403px){
+  #entity1{
+    margin-top: 50px;
+  }
+} 
 /*@media screen and (max-width: 1315px) {
     .first {
       float: left;
